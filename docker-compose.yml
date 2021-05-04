@@ -28,7 +28,7 @@
       environment:
         KAFKA_BROKER_ID: 1
         KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-        KAFKA_LISTENERS: INTERNAL://broker:29092,EXTERNAL://localhost:9092    # change to 0.0.0.0 if other machines will connect here
+        # KAFKA_LISTENERS: INTERNAL://broker:29092,EXTERNAL://localhost:9092    # change to 0.0.0.0 if other machines will connect here
         KAFKA_ADVERTISED_LISTENERS: INTERNAL://broker:29092,EXTERNAL://localhost:9092 # change to 0.0.0.0 if other machines will connect here
         KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
         KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
